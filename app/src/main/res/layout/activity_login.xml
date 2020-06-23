@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/mainicon"
+        android:id="@+id/mainimage"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"
+        />
+
+
+    <EditText
+        android:id="@+id/email_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="EMAIL"
+        android:ems="10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/mainimage"
+        app:layout_constraintTop_toTopOf="@+id/mainimage"
+        android:layout_marginTop="300dp" />
+
+    <EditText
+        android:id="@+id/password_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="PASSWORD"
+        android:ems="10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/email_et"
+        app:layout_constraintTop_toTopOf="@+id/email_et"
+        android:layout_marginTop="100dp" />
+
+    <Button
+        android:id="@+id/login_b"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="로그인"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/password_et"
+        app:layout_constraintTop_toTopOf="@id/password_et"
+        android:layout_marginTop="150dp"
+        />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/login_b"
+        app:layout_constraintTop_toTopOf="@id/login_b">
+    <TextView
+        android:id="@+id/signup_t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아직 계정이 없으신가요?"
+        android:layout_marginTop="100dp"/>
+    <TextView
+        android:id="@+id/signup_tb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF1E9CFF"
+        android:clickable="true"
+        android:text="회원가입"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="10dp"
+       />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

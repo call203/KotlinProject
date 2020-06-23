@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/signup_t"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="회원가입"
+        android:textColor="#FF708090"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        />
+
+
+
+
+        <EditText
+            android:id="@+id/nameEt"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/signup_t"
+            app:layout_constraintTop_toTopOf="@id/signup_t"
+            android:layout_marginTop="100dp"
+
+            />
+
+    <EditText
+        android:id="@+id/password_et"
+        android:hint="Pssaword"
+        android:inputType="textPassword"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/nameEt"
+        app:layout_constraintTop_toTopOf="@id/nameEt"
+        android:layout_marginTop="100dp"
+
+        />
+
+    <EditText
+        android:id="@+id/password2_et"
+        android:hint="password check"
+        android:inputType="textPassword"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/password_et"
+        app:layout_constraintTop_toTopOf="@id/password_et"
+        android:layout_marginTop="100dp"
+
+        />
+    <EditText
+        android:id="@+id/phoneNum_et"
+        android:hint="phone ( '-' 없이 입력 )"
+        android:inputType="phone"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/password2_et"
+        app:layout_constraintTop_toTopOf="@id/password2_et"
+        android:layout_marginTop="100dp"
+
+        />
+
+    <TextView
+        android:id="@+id/signup_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/phoneNum_et"
+        android:layout_marginTop="80dp"
+        android:textColor="#FF1E9CFF"
+        android:textSize="20sp"
+        android:text="완료!" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
